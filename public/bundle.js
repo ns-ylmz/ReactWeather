@@ -27225,8 +27225,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./app.css", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./app.css");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./app.scss", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./app.scss");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -27244,7 +27244,7 @@
 
 
 	// module
-	exports.push([module.id, ".page-title {\n\tmargin-top: 2.5rem;\n\tmargin-bottom: 2.5rem;\n}\n\ninput[type=search] {\n\tbox-shadow: none;\n}", ""]);
+	exports.push([module.id, ".page-title {\n  margin-top: 2.5rem;\n  margin-bottom: 2.5rem;\n  color: purple; }\n\ninput[type=search] {\n  box-shadow: none; }\n", ""]);
 
 	// exports
 
